@@ -1,0 +1,11 @@
+version: '2'
+services:
+  app:
+    image: golang:1.11.6
+    volumes:
+      - .:/go/src/github.com/gcloud/cloudfunction_tutorial
+    tty: true
+    working_dir: /go/src/github.com/gcloud/cloudfunction_tutorial
+    environment:
+      GO11MODULE: 'on'
+
